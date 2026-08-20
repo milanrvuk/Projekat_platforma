@@ -185,10 +185,18 @@
       margin: 0.8rem 0;
     }
 
+    .hero-cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 0.8rem 0 2rem;
+      animation: fadeInLeft 1.4s ease 0.5s both;
+    }
+
     .hero-cta {
       display: inline-block;
       align-self: flex-start;
-      margin: 0.8rem 0 2rem;
+      margin: 0;
       padding: 0.9rem 1.7rem;
       border: 1px solid var(--gold);
       border-radius: 999px;
@@ -502,14 +510,11 @@
   <header>
     <div class="logo">KAI<span>ZA</span></div>
     <nav>
-      <a href="#platforma">Platforma</a>
       <a href="#kontakt" class="nav-cta">Kontakt</a>
     </nav>
   </header>
 
   <section class="hero-text">
-    <p class="overline">B2B tržišna mreža · HoReCa sektor</p>
-
     <h1 class="tagline">
       Transparentnost<br/>
       nije opcija.<br/>
@@ -530,21 +535,10 @@
       <div class="haiku-separator"></div>
     </div>
 
-  <a href="https://projekatplatforma-gfojwbswlasvhoutm8xkpd.streamlit.app/" class="hero-cta">Otvorite prototip</a>
-
-    <div class="stats">
-      <div class="stat-item">
-        <span class="stat-number">650k+</span>
-        <span class="stat-label">Registrovanih entiteta</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number">20+</span>
-        <span class="stat-label">Aktivnih objekata</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number">Kompanijska</span>
-        <span class="stat-label">Inteligencija</span>
-      </div>
+    <div class="hero-cta-row">
+      <!-- TODO: link ka javnom demou "Proizvodnja" kada bude dostupan -->
+      <a href="#" class="hero-cta">Proizvodnja</a>
+      <a href="https://projekatplatforma-gfojwbswlasvhoutm8xkpd.streamlit.app/" class="hero-cta">HoReCa</a>
     </div>
   </section>
 
@@ -561,34 +555,8 @@
     <span class="footer-right">milan.vukicevic@kaiza.rs</span>
   </footer>
 
-  <section class="section-platform" id="platforma">
-    <div class="platform-intro">
-      <h2>Kako KAIZA funkcioniše</h2>
-      <p>Svaki entitet definiše svoju kompanijsku inteligenciju. Matching nije crna kutija. Niko nije privilegovan.</p>
-    </div>
-
-    <div class="pillar">
-      <span class="pillar-number">01</span>
-      <h3>Transparentni matching</h3>
-      <p>Kupac unosi artikal i količinu. Sistem u realnom vremenu rangira dobavljače. Sistem u realnom vremenu rangira kupce. Svako vidi zašto.</p>
-    </div>
-
-    <div class="pillar">
-      <span class="pillar-number">02</span>
-      <h3>Preciznost bez kompromisa</h3>
-      <p>Nema više "oko 20 kg". Tolerancija količine definisana na ±%. Reklamacija je matematička, ne subjektivna.</p>
-    </div>
-
-    <div class="pillar">
-      <span class="pillar-number">03</span>
-      <h3>Sistem koji uči</h3>
-      <p>Svaka odluka postaje podatak. Platforma gradi bazu znanja koja u Fazi 3 postaje ML engine — i predviđa pre nego što naručite.</p>
-    </div>
-  </section>
-
   <section class="section-contact" id="kontakt">
     <h2>Razgovarajmo</h2>
-    <p>Platforma je u razvoju · Seed runda · 35.000 – 65.000 EUR</p>
     <a href="mailto:milan.vukicevic@kaiza.rs" class="contact-link">milan.vukicevic@kaiza.rs</a>
   </section>
 
