@@ -18,8 +18,18 @@ st.set_page_config(
 # =========================================================
 # PASSWORD
 # =========================================================
+# Lozinka se NE cuva u kodu (repo je javan) -- upisuje se u Streamlit Cloud:
+# Settings -> Secrets:  lozinka = "..."
 
-PASSWORD = "796027Mrv"
+try:
+    PASSWORD = st.secrets.get("lozinka")
+except Exception:
+    PASSWORD = None
+
+if not PASSWORD:
+    st.title("KAIZA")
+    st.error("Pristup nije podešen.")
+    st.stop()
 
 if "authed" not in st.session_state:
     st.session_state.authed = False
